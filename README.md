@@ -43,9 +43,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 
 # 1. Load and prepare data
-url = "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-ML240EN-skillsnetwork/labs/data/CarPrice_Assignment.csv"
-# url = '/content/drive/MyDrive/19A21A01B_BLENDED/CarPrice_Assignment.csv'
-data = pd.read_csv(url)
+data = pd.read_csv("https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-ML240EN-skillsnetwork/labs/data/CarPrice_Assignment.csv")
 
 # Simple preprocessing
 data = data.drop(['car_ID', 'CarName'], axis=1)   # Remove unnecessary columns
